@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice4-2</title>
+  <script src=""></script>
+</head>
+<body>
+  <!-- 조건문 활용의 리팩토링(중복제거) -->
+  <h1>Web</h1>
+  <input type="button" value="야간모드" onclick="
+  let target = document.querySelector('body');
+  if(this.value === '야간모드'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    this.value = '주간모드';
+  }else{
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    this.value = '야간모드';
+  }
+  ">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+    Sed consequuntur incidunt, voluptas reiciendis itaque blanditiis dolores facilis, nobis ratione illo at aliquid 
+    vero perspiciatis eius maxime quaerat similique amet perferendis?
+  </p>
+</body>
+</html>
